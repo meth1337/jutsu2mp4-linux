@@ -13,14 +13,15 @@ function hp {
         echo -e "$green-jutsu2mp4-$reset v$version\n"
         echo -e "$greenиспользование:$reset jutsu2mp4 -опция / --опции"
         echo "все опции:"
-        echo -e "$green-h$reset / $green--help$reset: показать это сообщение"
+        echo ""
+        echo -e "$green-h$reset / $green--help$reset: показать это сообщение" 
         echo -e "$green-d$reset / $green--download$reset: сгенерировать ссылку на скачивание эпизода"
         echo -e "$green-s$reset / $green--status$reset: проверить статус jut.su"
 
 }
 
 function st {
-        if curl -s --head --request GET https://jut.su/ | grep "200 OK"; then
+        if curl -s https://jut.su/ -H X-Host: 127.0.0.1 | grep "200 OK"; then
                 echo -e "статус jutsu: $greenонлайн$reset"
         else
                 echo -e "статус jutsu: $redоффлайн$reset"
@@ -30,7 +31,7 @@ function st {
 function dl {
         echo -e "$greenвведите ссылку на эпизод$reset: "
     read url
-    curl $url > tmp.html
+    ./webdriver-invisible $url
         clear
         echo -e "$greenссылки на скачивание$reset:"
     cat tmp.html | ./pup "video" | tail -n +2 | head -4
@@ -56,4 +57,3 @@ case "${1}" in
         #       echo "чтобы получить список опций используйте $0 -h"
         #       ;;
 esac
-
