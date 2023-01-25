@@ -17,6 +17,20 @@
 ```
 пример: `./jutsu2mp4 -d`
 
+## установка
+перед клонированиtм репозитория следует установить все необходимые зависимости:
+```
+sudo apt install -y coreutils git 
+```
+после этого, выполните следующие комманды:
+```
+git clone https://github.com/meth1337/jutsu2mp4-linux
+cd jutsu2mp4-linux
+chmod +x jutsu2mp4
+./jutsu2mp4 -опция
+```
+поздравляю! вы установили jutsu2mp4, приятного использования<3
+
 ## кастомный вебдрайвер под другой браузер
 вебдрайвера написаны на python'е и скомплированны [pyinstaller](https://github.com/pyinstaller/pyinstaller)'ом
 ```python
