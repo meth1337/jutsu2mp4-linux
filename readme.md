@@ -24,11 +24,11 @@ try:
     from pyvirtualdisplay import Display
 
     url = argv[1]
-
+    
     display = Display(visible=0, size=(800, 600))
     display.start()
 
-    driver = webdriver.Firefox()
+    driver = webdriver.Firefox()  # вместо firefox'а можно использовать другие браузеры. список: Chrome, Edge, Firefox, IE, Safari
         
     driver.get(url)
 
