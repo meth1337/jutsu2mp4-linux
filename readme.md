@@ -30,7 +30,6 @@ try:
 
     driver = webdriver.Firefox()  # вместо firefox'а можно использовать другие браузеры. список: Chrome, Edge, Firefox, 
                                   # IE, Safari
-        
     driver.get(url)
 
     file = open("tmp.html", "w")
