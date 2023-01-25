@@ -33,7 +33,7 @@ chmod +x jutsu2mp4
 p.s. если у вас стоит не `apt` а другой пакетный менеджер установка зависимостей может выглядеть по другому. Однако, зависимости те же самые)
 
 ## кастомный вебдрайвер под другой браузер
-вебдрайвера написаны на python'е и скомплированны [pyinstaller](https://github.com/pyinstaller/pyinstaller)'ом
+вебдрайвера написаны на python'е и скомпилированны [pyinstaller](https://github.com/pyinstaller/pyinstaller)'ом
 ```python
 try:
     from selenium import webdriver
