@@ -1,5 +1,7 @@
-# jutsu2mp4
+<div align="center">
+<h1>jutsu2mp4</h1>
 скрипт для скачивания эпизодов с [jutsu](https://jut.su). написан на [bash](https://www.gnu.org/software/bash/)'е (предустановлен в линуксе.)
+</div>
 
 ## использование
 ```
