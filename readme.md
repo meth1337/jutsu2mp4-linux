@@ -1,4 +1,5 @@
 <div align="center">
+<img src="/img/rengoku.png"></img>
 <h1>jutsu2mp4</h1>
 скрипт для скачивания эпизодов с <a href="https://jut.su">jutsu</a>. написан на <a href="https://www.gnu.org/software/bash/">bash</a>'е (предустановлен в линуксе.)
 </div>
