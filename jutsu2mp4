@@ -21,11 +21,9 @@ function hp {
 }
 
 function st {
-        if curl -s https://jut.su/ -H X-Host: 127.0.0.1 | grep "200 OK"; then
-                echo -e "статус jutsu: $greenонлайн$reset"
-        else
-                echo -e "статус jutsu: $redоффлайн$reset"
-        fi
+        echo "вы можете остановить процесс с помощью ctrl+c."
+        echo ""
+        ping jut.su
 }
 
 function dl {
@@ -58,4 +56,3 @@ case "${1}" in
         #       echo "чтобы получить список опций используйте $0 -h"
         #       ;;
 esac
-
