@@ -17,7 +17,8 @@ function hp {
         echo -e "$green-h$reset / $green--help$reset: показать это сообщение" 
         echo -e "$green-d$reset / $green--download$reset: сгенерировать ссылку на скачивание эпизода"
         echo -e "$green-s$reset / $green--status$reset: проверить статус jut.su"
-
+        echo ""
+        echo "если вы хотите сообщить о ошибке связанной с скриптом, можете сделать это здесь: https://github.com/meth1337/jutsu2mp4-linux/issues"
 }
 
 function st {
@@ -28,11 +29,11 @@ function st {
 
 function dl {
         echo -e "$greenвведите ссылку на эпизод$reset: "
-    read url
-    webdrivers/webdriver-invisible $url
+        read url
+        webdrivers/webdriver-invisible $url
         clear
         echo -e "$greenссылки на скачивание$reset:"
-    cat tmp.html | src/pup "video" | tail -n +2 | head -4
+        cat tmp.html | src/pup "video" | tail -n +2 | head -4
         rm tmp.html
         rm geckodriver.log
 }
@@ -56,3 +57,4 @@ case "${1}" in
         #       echo "чтобы получить список опций используйте $0 -h"
         #       ;;
 esac
+
