@@ -39,7 +39,8 @@ p.s. если у вас стоит не `apt` а другой пакетный �
 
 # для разработчиков
 ## кастомный вебдрайвер под другой браузер
-вебдрайвера написаны на python'е и скомпилированны [pyinstaller](https://github.com/pyinstaller/pyinstaller)'ом
+вебдрайвера написаны на python'е и скомпилированны [pyinstaller](https://github.com/pyinstaller/pyinstaller)'ом.<br>
+зависимости: [selenium](https://www.selenium.dev/documentation/), [pyvirtualdisplay](https://github.com/ponty/PyVirtualDisplay/blob/master/README.md)
 ```python
 try:
     from selenium import webdriver
