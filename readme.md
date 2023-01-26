@@ -26,7 +26,9 @@ sudo apt install -y coreutils xvbf git
 после этого, выполните следующие комманды:
 ```
 git clone https://github.com/meth1337/jutsu2mp4-linux
-cd jutsu2mp4-linux
+cd jutsu2mp4-linux/src && chmod +x pup
+cd ../webdrivers && chmod +x webdriver webdriver-invisible
+cd ..
 chmod +x jutsu2mp4
 ./jutsu2mp4 -опция
 ```
